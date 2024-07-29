@@ -1,0 +1,131 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id='title'>Survey Form</h1>
+    <p id='description'>Thank you for taking the time to help us improve the project</p>
+    <form id='survey-form'>
+      <fieldset>
+      <label id='name-label'>Name<input required id='name' type='text' placeholder='Enter your name'/></label>
+      <label id='email-label'>Email<input required id='email' type='email' placeholder='Enter your email'/></label>
+      <label id='number-label'>Phone number(optional)<input id='number' type='number' placeholder='Enter your phone number' min='11111111' max='99999999' /></label>
+      
+      <label for='gender'>Gender
+      <select id='dropdown'>
+        <option value=''>(Select one)</option>
+        <option value='1'>Male</option>
+        <option value='3'>Female</option>
+        <option value='2'>Other</option>
+        </select>
+      </label>
+      </fieldset>
+
+      <fieldset>
+      <legend>Did you like our project?</legend>
+      <label for='project-like'><input id='like' name='like' checked type='radio' value='Liked' class="inline">Liked</label>
+      <label for='project-dislike'><input id='dislike' name='like' class="inline" type='radio' value='Disliked'>Disliked</label>
+      </fieldset><fieldset>
+
+      <legend>Will you share our website?</legend>
+      <label for='share'><input id='share' name='share' class="inline" checked type='radio' value='yes'>Yes</label>
+      <label for='not-shared'><input id='noshare' name='share' type='radio' class="inline" value='no'>No</label>
+      </fieldset>
+      <fieldset>
+      <legend>Where do you think we can improve ourselves?</legend>
+      <label for='Design'><input id='design' type='checkbox' class="inline" value='design'>Design</label>
+      <label for='Functionalities'><input class="inline" id='function' type='checkbox' value='function'>Functionalities</label>
+      <label for='Aesthetic'><input class="inline" id='aesthetic' type='checkbox' value='aesthetic'>Aesthetic</label>
+      <label for='Coding'><input class="inline" id='coding' type='checkbox' value='coding'>Coding</label>
+      </fieldset>
+      <fieldset>
+      <label for="note">Share your comments:
+          <textarea id="note" name="note" rows="3" cols="30" placeholder="When I see this project, I feel..."></textarea>
+        </label>
+        </fieldset>
+
+      <input id='submit' type='submit' value='Submit'>
+
+  </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color:#1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+  display: inline; 
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+ 
+ input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+
+** end of undefined **
+
